@@ -33,6 +33,13 @@ section nav {
 
 .main {
     background-color: rgba(20, 103, 158, 0.8);
+    width: 60%;
+}
+
+.main article img {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 5%;
 }
 
 a, li {
