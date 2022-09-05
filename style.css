@@ -34,3 +34,8 @@ section nav {
 .main {
     background-color: rgba(20, 103, 158, 0.8);
 }
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
