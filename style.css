@@ -1,12 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
+body {
+    font-family: 'Poppins';
+}
+
+section nav {
+    padding: 5px;
+    margin: 10px;
+}
+
+#mainTitle {
+    display: flex;
+    justify-content: start;
+}
+
 #menu {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: end;
+
+}
+
+#mainTitle {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .main {
