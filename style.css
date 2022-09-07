@@ -3,20 +3,37 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
+    background: linear-gradient(to right, #012a4a, #0d1f2d);
     font-family: 'Poppins';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
     color: #fffcf2;
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 26px;
 }
 
 header nav ul li a {
     color: #fffcf2;
     background-color: #00171f;
-    margin: 20px;
     padding: 5px 15px;
+    margin: 20px;
+    transition: 300ms;
+    font-size: 20px;
 }
 
 header nav ul li a:hover {
@@ -25,34 +42,41 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
-#mainTitle {
+#mainTitle, #menu {
     display: flex;
-    justify-content: start;
-    font-size: 44px;
-}
-
-#menu {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .main {
-    background: linear-gradient(to right, #012a4a, #0d1f2d);
-    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
-article, article img {
-    margin-left: 700px;
+#orçamento {
+    transition: 500ms;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+#orçamento:hover {
+    background-color: #fffcf2;
+    color: #00171f;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.images {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+img {
+    margin: 20px;
     border-radius: 15px;
     border-top-left-radius: 55px;
     border-bottom-right-radius: 55px;
-}
-
-a, li {
-    text-decoration: none;
-    list-style: none;
 }
 
 header, footer {
@@ -60,14 +84,19 @@ header, footer {
     padding: 15px;
 }
 
-footer ul li a {
+header {
+    border-bottom: 1.5px solid #fffcf2;
+}
+
+footer  {
+    border-top: 1.5px solid #fffcf2;
+}
+
+ul li a{
     color: #fffcf2;
-    background-color: #00171f;
-    padding: 5px 15px;
 }
 
 footer ul li a:hover {
-    color: #00171f;
-    background-color: #fffcf2;
-    border-radius: 15px;
+    text-decoration: underline;
+    transition: 400ms;
 }
