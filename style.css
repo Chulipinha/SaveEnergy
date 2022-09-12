@@ -8,95 +8,114 @@
 
 body {
     background: linear-gradient(to right, #012a4a, #0d1f2d);
+    background-image: url(./media/PanelInstall2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 20px;
     color: #fffcf2;
 }
 
-a, li {
-    text-decoration: none;
-    list-style: none;
-}
-
 header {
+    border-bottom: 1.5px solid #fffcf2;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
     font-size: 26px;
 }
 
+header h1 span {
+    color: #ff7d00;
+}
+
 header nav ul li a {
     color: #fffcf2;
-    background-color: #00171f;
+    background-color: #000814;
     padding: 5px 15px;
     margin: 20px;
-    transition: 300ms;
+    transition: 500ms;
     font-size: 20px;
+    border-radius: 15px;
 }
 
 header nav ul li a:hover {
-    color: #00171f;
+    color: #000814;
     background-color: #fffcf2;
-    border-radius: 15px;
 }
 
 #mainTitle, #menu {
     display: flex;
 }
 
-.main {
+main {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 30px;
 }
 
-#orçamento {
+h2, h3 {
+    color: #ff7d00;
+}
+
+#orçamento{
+    background-color: #ff7d00;
+    color: #fffcf2;
+    width: 645px;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
     transition: 500ms;
     font-size: 20px;
-    padding: 5px;
-    text-decoration: underline;
+    padding: 15px;
 }
 
 #orçamento:hover {
     background-color: #fffcf2;
-    color: #00171f;
-    border-radius: 15px;
-    text-decoration: none;
+    color: #ff7d00;
 }
 
 .images {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
 }
 
 img {
-    margin: 20px;
+    margin: 30px;
     border-radius: 15px;
     border-top-left-radius: 55px;
     border-bottom-right-radius: 55px;
 }
 
 header, footer {
-    background: #00171f;
-    padding: 15px;
+    background: #000814;
+    padding: 30px;
+
 }
 
-header {
-    border-bottom: 1.5px solid #fffcf2;
-}
-
-footer  {
-    border-top: 1.5px solid #fffcf2;
-}
-
-ul li a{
+a, li {
+    text-decoration: none;
+    list-style: none;
     color: #fffcf2;
 }
 
+footer {
+    border-top: 1.5px solid #fffcf2;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li a {
+    transition: 500ms;
+}
+
 footer ul li a:hover {
-    text-decoration: underline;
-    transition: 400ms;
+    color: #ff7d00;
 }
